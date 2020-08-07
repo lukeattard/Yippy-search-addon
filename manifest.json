@@ -1,0 +1,29 @@
+{
+	"name": "Yippy Search",
+	"description": "Add yippy.com to your search engines Not an official add-on.",
+	"version": "0.1",
+	"manifest_version": 2,
+	"applications":{
+		"gecko": {
+			"id": "yippy-search@rapiddata.com.au",
+			"strict_min_version": "64.0"
+		}
+	},
+	"developer": {
+		"name": "Luke Attard",
+		"url": "https://github.com/lukeattard/"
+	},
+	"icons": {
+		"32": "rapid32.png"
+	},
+	"web_accessible_resources": [
+		"rapid32.png"
+	],
+  "chrome_settings_overrides": {
+		"search_provider": {
+			"name": "Yippy Search",
+			"search_url": "https://www.yippy.com/search?query={searchTerms}",
+			"suggest_url": "https://www.yippy.com/search?client=firefox&query={searchTerms}"
+		}
+	}
+}
